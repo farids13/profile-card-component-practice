@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@700&family=Lexend+Deca:wght@400;700&family=Montserrat:wght@600&family=Outfit:wght@100;300;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html, body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: hsl(185, 75%, 39%);
+      /* background: url(./design/desktop-design.jpg) center fixed no-repeat; */
+    }
+    .card{
+      width: 350px;
+      height: 375px;
+      overflow: hidden;
+      border-radius: 20px;
+      font-family: 'Kumbh Sans';
+      background-color: white;
+      z-index: 1;
+    }
+    .profile{
+      height: 76%;
+      position: relative;
+      text-align: center;
+    }
+    .img-profile{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 5px solid white;
+    }
+    .profile .name{
+      margin-top: 70px;
+      font-size: 9px;
+      margin-bottom: 0;
+    }
+    .name{
+      margin: 0;
+    }
+    .profile p{
+      margin: -5px;
+      font-size: 13px;
+    }
+    .more{
+      display: flex;
+      padding: 25px 56px 20px 50px;
+      justify-content: space-between;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .more p{
+      font-size: 12px;
+      margin: 3px;
+    }
+    .more b{
+      font-size: 18px;
+    }
+    h1, p{
+      color: hsl(0, 0%, 59%);
+    }
+    b{
+      color: hsl(229, 23%, 23%);
+    }
+    .circle1{
+      position: absolute;
+      top: -40vh;
+      left: -70vh;
+      width: 900px;
+      height: 900px;
+      background-image: linear-gradient(to bottom, hsl(185, 75%, 49%), hsl(185, 75%, 39%));
+      border-radius: 50%;
+    }
+    .circle2{
+      position: absolute;
+      bottom: -40vh;
+      right: -70vh;
+      width: 900px;
+      height: 900px;
+      background-image: linear-gradient(to bottom, hsl(185, 75%, 39%), hsl(185, 75%, 49%));
+      border-radius: 50%;
+    }
+    
+    * {
+      /* outline: 1px solid red; */
+    }
+  </style>
+</head>
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <main class="card">
+
+    <div class="profile">
+      <img src="./images/bg-pattern-card.svg" alt="Image background">
+      <img src="./images/image-victor.jpg" alt="Profile Image" class="img-profile">
+
+      <div class="name">
+        <h1><b>Victor Crest</b>  26</h1>
+      </div>
+      <p>London</p>
+    </div>
+    
+    <div class="more">
+      <div>
+        <b>80K</b>
+        <p>Followers</p>
+      </div>
+      <div>
+        <b>803K</b>
+        <p>Likes</p>
+      </div>
+      <div>
+        <b>1.4K</b>
+        <p>Photos</p>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
